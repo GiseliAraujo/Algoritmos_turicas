@@ -134,7 +134,7 @@ def enviar_email():
         msg['Subject'] = "Assunto"
         msg['From'] = 'giselialmeidadearaujo@gmail.com'
         msg['To'] = 'giselialmeidadearaujo@gmail.com'
-        password = 'sspgdnvuwwthgxak'
+        password =  KEY_GMAIL
         msg.add_header('Content-Type', 'text/html')
         msg.set_payload(corpo_email)
 
