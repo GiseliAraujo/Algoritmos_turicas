@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Resultado</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Manchete</th>
+                <th>Link</th>
+                <th>Data</th>
+                <th>Informações</th>
+            </tr>
+            {% for row in result.iterrows() %}
+            <tr>
+                <td>{{ row[1]['Manchete'] }}</td>
+                <td>{{ row[1]['Link'] }}</td>
+                <td>{{ row[1]['Data'] }}</td>
+                <td>{{ row[1]['Informações'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
