@@ -24,7 +24,7 @@ Após o Scraping ele irá realizar o envio para o Email unindo no maximo 20 noti
 
 
 
-#Segue o Roadmap para os Futuros Scrapings
+# Segue o Roadmap para os Futuros Scrapings
 
 América do Norte:
 The New York Times (Estados Unidos, Nova Iorque, Nova Iorque) - Inglês - https://www.nytimes.com/section/world
