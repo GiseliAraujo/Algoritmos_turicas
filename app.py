@@ -40,24 +40,139 @@ def index():
 @app.route("/cbc")
 def cbc():
     noticias = Scraping_cbc()
-    return render_template("noticias.html", noticias=noticias)
+    return '<!doctype html>
+                    <html>
+                        <head>
+                            <title>Resultado</title>
+                        </head>
+                        <body>
+                            <table>
+                                <tr>
+                                    <th>Manchete</th>
+                                    <th>Link</th>
+                                    <th>Data</th>
+                                    <th>Informações</th>
+                                </tr>
+                                {% for row in noticias.iterrows() %}
+                                <tr>
+                                    <td>{{ row[1]['Manchete'] }}</td>
+                                    <td>{{ row[1]['Link'] }}</td>
+                                    <td>{{ row[1]['Data'] }}</td>
+                                    <td>{{ row[1]['Informações'] }}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </body>
+                    </html>'
 
 @app.route("/thetimes")
 def thetimes():
     noticias = Scraping_thetimes()
-    return render_template("noticias.html", noticias=noticias)
+    return '<!doctype html>
+                    <html>
+                        <head>
+                            <title>Resultado</title>
+                        </head>
+                        <body>
+                            <table>
+                                <tr>
+                                    <th>Manchete</th>
+                                    <th>Link</th>
+                                    <th>Data</th>
+                                    <th>Informações</th>
+                                </tr>
+                                {% for row in noticias.iterrows() %}
+                                <tr>
+                                    <td>{{ row[1]['Manchete'] }}</td>
+                                    <td>{{ row[1]['Link'] }}</td>
+                                    <td>{{ row[1]['Data'] }}</td>
+                                    <td>{{ row[1]['Informações'] }}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </body>
+                    </html>'
 
 @app.route("/folha")
 def folha():
     noticias = Scraping_folha()
-    return render_template("noticias.html", noticias=noticias)
+    return '<!doctype html>
+                    <html>
+                        <head>
+                            <title>Resultado</title>
+                        </head>
+                        <body>
+                            <table>
+                                <tr>
+                                    <th>Manchete</th>
+                                    <th>Link</th>
+                                    <th>Data</th>
+                                    <th>Informações</th>
+                                </tr>
+                                {% for row in noticias.iterrows() %}
+                                <tr>
+                                    <td>{{ row[1]['Manchete'] }}</td>
+                                    <td>{{ row[1]['Link'] }}</td>
+                                    <td>{{ row[1]['Data'] }}</td>
+                                    <td>{{ row[1]['Informações'] }}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </body>
+                    </html>'
 
 @app.route("/elpais")
 def elpais():
     noticias = Scraping_ElPais()
-    return render_template("noticias.html", noticias=noticias)
+    return '<!doctype html>
+                    <html>
+                        <head>
+                            <title>Resultado</title>
+                        </head>
+                        <body>
+                            <table>
+                                <tr>
+                                    <th>Manchete</th>
+                                    <th>Link</th>
+                                    <th>Data</th>
+                                    <th>Informações</th>
+                                </tr>
+                                {% for row in noticias.iterrows() %}
+                                <tr>
+                                    <td>{{ row[1]['Manchete'] }}</td>
+                                    <td>{{ row[1]['Link'] }}</td>
+                                    <td>{{ row[1]['Data'] }}</td>
+                                    <td>{{ row[1]['Informações'] }}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </body>
+                    </html>'
 
 @app.route("/bbc")
 def bbc():
     noticias = Scraping_BBC()
-    return render_template("noticias.html", noticias=noticias)
+    return '<!doctype html>
+                    <html>
+                        <head>
+                            <title>Resultado</title>
+                        </head>
+                        <body>
+                            <table>
+                                <tr>
+                                    <th>Manchete</th>
+                                    <th>Link</th>
+                                    <th>Data</th>
+                                    <th>Informações</th>
+                                </tr>
+                                {% for row in noticias.iterrows() %}
+                                <tr>
+                                    <td>{{ row[1]['Manchete'] }}</td>
+                                    <td>{{ row[1]['Link'] }}</td>
+                                    <td>{{ row[1]['Data'] }}</td>
+                                    <td>{{ row[1]['Informações'] }}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </body>
+                    </html>'
