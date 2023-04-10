@@ -7,6 +7,8 @@ from translate import Translator
 !pip install gspread oauth2client
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+import requests
+from bs4 import BeautifulSoup
 
 def Scraping_cbc(limit=20):
     site_cbc = requests.get('https://www.cbc.ca/news/world/')
