@@ -1,1 +1,8 @@
 
+flask
+smtplib
+pandas
+translate
+gspread
+oauth2client
+beautifulsoup4
